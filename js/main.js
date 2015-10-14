@@ -18,16 +18,13 @@ $(document).ready(function() {
 		  'hitType': 'event',          // Required.
 		  'eventCategory': 'button',   // Required.
 		  'eventAction': 'click',      // Required.
-		  'eventLabel': 'nav downloadBtn_chrome',
+		  'eventLabel': 'nav downloadBtn_chrome_nowtv',
 		  'hitCallback': function() {
 			//window.location.href = $('#downloadBtn').attr("href");
 		  }
 		});
-		chrome.webstore.install(undefined, function(){
-			alert("Wenn du Zeit und Lust hast und meine Mühen belohnen willst, die Erweiterung bitte bewerten. Danke!");
-			window.location.href = "https://chrome.google.com/webstore/detail/bookclbapojpfhnojdddchiggcpkojmg/reviews";
-		});
-		return false;
+		alert("Wenn du Zeit und Lust hast und meine Mühen belohnen willst, die Erweiterung bitte bewerten. Danke!");
+		return true;
 	});
 	
 	$('#downloadBtnFirefox').on('click', function() {
